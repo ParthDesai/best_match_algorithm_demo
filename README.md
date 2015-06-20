@@ -4,7 +4,7 @@ Job search algorithm
 This project demonstrates the use of `Machine learning` to find optimal choice for candidates.
 
 **The algorithm maintains following key structures:**
-* `Attribute Map` : This dictionary stores every attribute's every possible value's weight. It is used to
+* `Attribute Map` : This dictionary stores every attributes' every possible value's weight. It is used to
 learn about user's like dislike and weight of attribute is adjusted according to user input.
 
 **Algorithm's high level steps:**
