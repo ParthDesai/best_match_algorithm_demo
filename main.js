@@ -10,6 +10,7 @@ var context = creator.createData(500, function(count) { return 'name' + count; }
 var printCompanyDetails = function (prediction) {
     console.log('******************************************');
     console.log('Name: ' + prediction.company.name);
+    console.log('Domain: ' + prediction.company.domain);
     console.log('Positions Open:');
     prediction.company.post.forEach(function (value) {
         console.log(' ' + value);
@@ -41,6 +42,12 @@ var mainLoop = function (reply, prediction) {
             default :
                 return;
         }
+    }
+
+    if (context.companies.length === 0) {
+        console.log('No more companies....')
+        console.log('Bye Bye!!!!!');
+        process.exit(0);
     }
 
     prediction = core.getNextCompanyPrediction(context);
