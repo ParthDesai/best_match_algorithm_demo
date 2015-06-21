@@ -55,7 +55,7 @@ var mainLoop = function (reply, prediction) {
         }
         return mainLoop(input, prediction);
     });
-}
+};
 
 mainLoop();
 
