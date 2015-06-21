@@ -1,4 +1,4 @@
-Job search algorithm
+Best match search algorithm
 ====================
 
 This project demonstrates the use of `Machine learning` to find optimal choice for candidates.
